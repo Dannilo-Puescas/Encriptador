@@ -1,0 +1,179 @@
+*{
+    background:#fff;
+    font-family: 'Inter';
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    /* overflow-y: hidden; */
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    border-bottom: 0.5px solid #495057;
+    z-index: 100;
+}
+
+header .logo{
+    float: left;
+    width: 80px;
+    padding: 10px;
+}
+header .titulo{
+    color: #2a7ae4;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    padding: 10px;
+}
+main{
+    display: flex;
+    /* margin: 20px; */
+    /* margin-bottom: 10px;
+    margin-left: 180px; */
+    
+}
+.container{
+    margin-left: 20px;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 120px;
+    width: 450px;
+    padding: 10px;
+    /* margin-right: 20px; */
+}
+.container .controls {
+    border: 1px solid #e0e0e0;
+    background: white;
+    border-radius: 8px;
+    height: 100px;
+    width: 420px;
+    color: #0A3871;
+    padding: 8px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    resize: none;
+}
+
+.container .informacion {
+    color: #495057;
+    text-align: center;
+    font-size:16px;
+}
+
+::placeholder {
+    text-transform: none;
+}
+
+  /* .text-area:focus {
+      outline: none;
+    } */
+
+    .encriptado{
+        /* border: 1px solid rgb(0, 255, 191); */
+        position: relative;
+        top: 120px;
+        width: 450px;
+        padding: 10px;
+    }
+
+    .encriptado .mensaje{
+    background: #f5f5f5;
+    border: 1px solid #f5f5f5;
+    /* background-image: url(imagenes/Muñeco.png); */
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    /* border: none; */
+    border-radius: 24px;
+    color:#0A3871;
+    padding: 8px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    /* margin-left: 60px;
+    margin-top: 20px;
+    padding-left: 39px; */
+    height: 100px;
+    width: 420px; /*bloqueamos hasta cierta altura para que no se tope con el boton copiar*/
+    /*overflow-y: auto;para poner barra por si acaso se pasa el texto*/
+    resize: none;
+}
+/* .mensaje:focus {
+    outline: none;
+} */
+
+.encriptado img{
+    transition: scale 400ms;
+}
+.encriptado img:hover{
+    transform: scale(110%);
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: url('imagenes/cursor.png' ), pointer;
+    /* cursor: pointer; */
+    margin: 0 30px;
+    height: 65px;
+    width: 250px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    /* float: left; */
+}
+
+.btn-encriptar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: url('imagenes/cursor.png' ), pointer;
+    height: 65px;
+    width: 250px;
+    /* margin-left: 50px; */
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.btn-encriptar:hover{
+    background-color: #2a7ae4;
+}
+.btn-desencriptar:hover{
+    background-color: #2a7ae4;
+}
+
+.btn-copiar {
+    border: none;
+    /* border: 1px solid #0A3871; */
+    /* border-radius: 24px; */
+    /* color: #0A3871 ; */
+    cursor: url('imagenes/cursor.png' ), pointer;
+    /* height: 67px; */
+    /* margin-left: 95px;
+    margin-top: 660px; */
+    float: right;
+    /* right: 10px;
+    bottom: 10px; */
+    /* position: absolute; */
+    /* width: 336px; */
+}
+
+.imagen{
+    /* border: 1px solid rgb(0, 255, 191); */
+    position: relative;
+    top: 120px;
+    width: 450px;
+    padding: 10px;
+}
